@@ -1,0 +1,11 @@
+find difference b/w normal function and an arrow function
+find what NaN is and why it occurs 
+write blogPost for NaN
+Why do functions returns undefined
+how to use path module.. create blog for path.join and path.resolve and the difference b/w them
+
+
+Steps to follow ::
+write simple code
+use console.log to debug
+read your code after writing it and try to understand it

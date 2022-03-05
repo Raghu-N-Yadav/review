@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        .selected {
+            background: #0f0;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input onmousemove="this.value=event.clientX+':'+event.clientY" value="Mouse over me">
+
+    <div ondblclick="alert('what r u doing')">heii</div>
+
+    <div oncopy="alert('no copy')">Hi, you can not copy this content.. so sorry</div>
+
+    <ul id="list">
+        <li>apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+
+    <script>
+        list.onclick = (e) => {
+            // alert(e.target.innerHTML)
+            // e.target.innerHTML = 'kk'
+            singleSelect(e.target);
+        }
+
+        function singleSelect(li) {
+            let selected = list.querySelectorAll('.selected');
+            for (let elem of selected) {
+                elem.classList.remove('selected');
+            }
+            li.classList.add('selected');
+        }
+
+    </script>
+</body>
+
+</html>

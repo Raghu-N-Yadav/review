@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Task3 -->
+
+    <div class="pane">
+        <h1>It's me</h1>
+        <p>It's a small info about this place. TO now more visit the place and see with your own eyes.</p>
+    </div>
+
+    <script>
+        const $pane = document.querySelector('.pane')
+        $pane.insertAdjacentHTML("afterbegin", '<button id = "remove" class="removebutton">[x]</button>');
+        remove.onclick = () => $pane.remove()
+
+    </script>
+
+    <!-- Task2 -->
+
+    <!-- <input type="button" id="hider" value="click to hide">
+    <input type="button" id="show" value="click to show">
+
+    <div id="text"></div>
+
+    <script>
+        let inputText = prompt('Enter the required text')
+        text.innerHTML = inputText
+
+        hider.addEventListener('click', () => {
+            text.hidden = true
+        })
+
+        show.onclick = () => {
+            text.hidden = false
+        }
+    </script> -->
+
+
+
+
+    <!-- Task 1 -->
+
+    <!-- <form id="messageform">
+        <input name="input1" placeholder="Type Here" required autocomplete="off">
+        <button>Send</button>
+    </form>
+
+    <input id="input" value="click me" onclick="alert('hello')" type="button"> -->
+
+    <!-- <script>
+
+        function handler(x) {
+            alert(x);
+        }
+
+        messageform.addEventListener('submit', e => {
+            e.preventDefault()
+
+            let message = e.target.elements.input1.value
+            handler(message)
+        })
+
+        let ul = document.createElement('ul')
+        document.body.append(ul)
+        input.onclick = countRabbits
+        function countRabbits() {
+            for (let i = 1; i <= 3; i++) {
+                let li = document.createElement('li')
+                li.append(prompt('name ??'))
+                ul.append(li)
+                // alert("Rabbit number " + i);
+            }
+        }
+    </script> -->
+</body>
+
+</html>
